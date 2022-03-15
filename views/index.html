@@ -1174,7 +1174,7 @@ document.getElementById("jam").innerHTML = tanggal.getHours()+":"+tanggal.getMin
 </script>
 <script>
 				// Akhir Hitungan Mundur
-				var countDownDate = new Date("Menuju Ramadhan 00:00:00").getTime();
+				var countDownDate = new Date("2 April 2022 00:00:00").getTime();
 
 				// Update Hitungan Mundur Setiap 1 Detik
 				var x = setInterval(function() {
@@ -1197,7 +1197,7 @@ document.getElementById("jam").innerHTML = tanggal.getHours()+":"+tanggal.getMin
 					// Ketika countdown timer sudah berakhir Maka Tulisan Berakhir
 					if (distance < 0) {
 						clearInterval(x);
-						document.getElementById("time").innerHTML = "Waiting";
+						document.getElementById("time").innerHTML = "Dimulai";
 					}
 				}, 1000);
 			</script>
