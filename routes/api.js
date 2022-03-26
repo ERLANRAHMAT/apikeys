@@ -3055,7 +3055,7 @@ router.get('/textmaker/random', async (req, res, next) => {
         if (theme == 'text-burn') {
             try {
             request.post({
-                url: "https://photooxy.com/logo-and-text-effects/write-text-on-burn-paper-388.html",
+                url: "https://zynfx.herokuapp.com/api/textpro/3dstone?text=${text}",
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 },
@@ -3065,7 +3065,7 @@ router.get('/textmaker/random', async (req, res, next) => {
                         $ = cheerio.load(b)
                         $(".thumbnail").find("img").each(function() {
                             h = $(this).attr("src")
-                            var result = "https://photooxy.com/"+h
+                            var result = "https://zynfx.herokuapp.com/"+h
                             fetch(encodeURI(`https://api.imgbb.com/1/upload?expiration=120&key=761ea2d5575581057a799d14e9c78e28&image=${result}&name=${randomTextNumber}`))
                                 .then(response => response.json())
                                 .then(data => {
