@@ -9,7 +9,6 @@ var zahirr = db.get("zahirr");
 }
 
 var creator = "@BetaBotz"
-var ytdl = require('ytdl-core');
 var ytpl = require('ytpl');
 var secure = require('ssl-express-www');
 var cors = require('cors');
